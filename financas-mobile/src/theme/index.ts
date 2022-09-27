@@ -21,7 +21,7 @@ export const THEME = {
     },
   
     FONT_FAMILY: {
-      REGULAR: 'Inter_400Regular',
+      REGULAR: 'Roboto',
       SEMI_BOLD: 'Inter_600SemiBold',
       BOLD: 'Inter_700Bold',
       BLACK: 'Inter_900Black'

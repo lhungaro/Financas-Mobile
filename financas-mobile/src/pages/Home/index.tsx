@@ -13,6 +13,7 @@ const list= [
     label: 'Boleto de conta de Luz',
     value: '300,90',
     date:'17/09/2022',
+    local: 'from C6 Bank',
     type:0 //saida
   },
   {
@@ -20,6 +21,7 @@ const list= [
     label: 'Salário',
     value: '2.500,00',
     date:'17/09/2022',
+    local: 'from Nubank',
     type:1 //entrada
   },
   {
@@ -27,6 +29,7 @@ const list= [
     label: 'Aluguel',
     value: '910,20',
     date:'17/09/2022',
+    local: 'from PicPay',
     type:0
   },
   {
@@ -34,6 +37,7 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from Nubank',
     type:0
   },
   {
@@ -41,6 +45,7 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from PicPay',
     type:0
   },
   {
@@ -48,6 +53,7 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from C6 Bank',
     type:0
   },
   {
@@ -55,6 +61,7 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from PicPay',
     type:0
   },
   {
@@ -62,6 +69,7 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from Nubank',
     type:0
   },
   {
@@ -69,11 +77,19 @@ const list= [
     label: 'Boleto de conta de Água',
     value: '352,10',
     date:'17/09/2022',
+    local: 'from C6 Bank',
     type:0
   },
 ]
 
-export function Home() {
+
+interface HomeProps {
+  navigation:any;
+}
+
+export function Home(props : HomeProps) {
+
+
   return (
     <View style={styles.container}>
       <View style={styles.balance}>
@@ -84,7 +100,7 @@ export function Home() {
             <BalanceFor balance="R$ 210,00" balanceFor={"month"}></BalanceFor>
             <BalanceFor balance="R$ 150,00" balanceFor={"year"}></BalanceFor>
           </View>
-          <AddCash></AddCash>
+          <AddCash navigation={props.navigation}></AddCash>
       </View>
       <View style={styles.informations}>
 

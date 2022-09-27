@@ -15,8 +15,8 @@ export function Balance() {
 
                 <View style={styles.content}>
                     <View style={styles.line}/>
-                    <Text style={styles.currencySimbol}>R$</Text>
-                    <Text style={styles.balance}>5.000,00</Text>
+                    <Text style={styles.currencySimbol}>R$ </Text>
+                    <Text style={styles.balance}>2,00</Text>
                 </View>
 
         </View>
@@ -28,7 +28,7 @@ export function Balance() {
                 <View style={styles.line}/>
             </View>
             <View style={styles.content}>
-                    <Text style={styles.currencySimbol}>R$</Text>
+                    <Text style={styles.currencySimbol}>R$ </Text>
                     <Text style={styles.balance}>5.000,00</Text>
             </View>
 

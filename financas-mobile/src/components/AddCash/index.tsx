@@ -4,11 +4,19 @@ import { View ,Text, TouchableOpacity} from 'react-native';
 import { styles } from './styles';
 import {Feather} from '@expo/vector-icons' 
 
-export function AddCash() {
+interface HomeProps {
+  navigation:any;
+}
+
+export function AddCash(props : HomeProps) {
+
+    const addCash = () => props.navigation.navigate("AddCash")
+
   return (
+
     <View style={styles.container}>
         
-        <TouchableOpacity style={styles.content}>
+        <TouchableOpacity style={styles.content} onPress={addCash}>
             <Feather name='trending-up' style={styles.icon}></Feather>
             <Text style={styles.text}> add cash </Text>
         </TouchableOpacity>

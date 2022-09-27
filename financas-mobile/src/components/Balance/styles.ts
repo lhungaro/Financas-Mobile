@@ -15,12 +15,12 @@ export const styles = StyleSheet.create({
     color:'#FFFFFF'
   },
   currencySimbol:{
-   fontSize:THEME.FONT_SIZE.LG, 
-   fontWeight : 'bold',
+    fontFamily:THEME.FONT_FAMILY.REGULAR,
+    fontSize:THEME.FONT_SIZE.LG,
     color:'#FFFFFF'
   },
   balance:{
-    fontFamily:THEME.FONT_FAMILY.SEMI_BOLD,
+    fontFamily:THEME.FONT_FAMILY.BOLD,
     fontSize:THEME.FONT_SIZE.LG,
     color:'#FFFFFF'
   },

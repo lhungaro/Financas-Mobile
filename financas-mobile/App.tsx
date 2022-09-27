@@ -11,6 +11,8 @@ import{
   Inter_900Black
 } from '@expo-google-fonts/inter'
 
+import AppNavigator from './src/app.navigator';
+
 
 
 export default function App() {
@@ -24,7 +26,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Home/>
+      <AppNavigator/>
     </View>
   );
 }

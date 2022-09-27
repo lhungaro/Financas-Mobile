@@ -13,14 +13,18 @@ export function Movements({data}) {
             
             <View style={styles.text}>
        
-                {data.type == 1 ?  <Feather name='chevrons-up' size={29}   style={styles.text}/> :
+                {/* {data.type == 1 ?  <Feather name='chevrons-up' size={29}   style={styles.text}/> :
                 <Feather name='chevrons-down' size={29}   style={styles.icon}/>
-                }
+                } */}
+                <View style={styles.labels}>
+
                     <Text style={styles.label}> {data.label}</Text>
+                    <Text style={styles.sublabel}> {data.local}</Text>
+                </View>
             </View>
                 
-            {data.type == 1 ? <Text style={styles.value}> {data.value}</Text> :
-            <Text style={styles.value2}> {data.value}</Text>}
+            {data.type == 1 ? <Text style={styles.value2}> R$ {data.value}</Text> :
+            <Text style={styles.value}> R$ {data.value}</Text>}
         
         </View>
 
